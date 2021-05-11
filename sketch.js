@@ -12,10 +12,12 @@ var rate =0;
 var font;
 var bodyFont;
 var rng;
+var vec;
 
 function preload(){
   font = loadFont('IBMPlexSans-SemiBold.ttf');
   bodyFont = loadFont('IBMPlexSans-Light.ttf');
+  vec = loadImage('001.svg');
 }
 
 function setup() {
@@ -64,7 +66,7 @@ function draw() {
 
   for (i = 0; i < 8; i++){
   noStroke();
-  ellipse(random()*width,random()*height/5,8,8);
+  image(vec,random()*width,random()*height/5);
 
   }
 
