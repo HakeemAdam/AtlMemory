@@ -71,8 +71,3 @@ function draw() {
   }
 
 }
-
-function mousePressed() {
-  rate=0;
-
-}
